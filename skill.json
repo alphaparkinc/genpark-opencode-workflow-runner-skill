@@ -1,0 +1,30 @@
+{
+  "name": "genpark-opencode-workflow-runner-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Branching conditional workflow execution tree builder.",
+  "author": "genpark",
+  "category": "agentic",
+  "tags": [
+    "workflow",
+    "branching",
+    "opencode"
+  ],
+  "inputs": {
+    "workflow_description": {
+      "type": "string"
+    },
+    "conditions": {
+      "type": "object"
+    }
+  },
+  "outputs": {
+    "execution_tree": {
+      "type": "array"
+    },
+    "branch_count": {
+      "type": "integer"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
